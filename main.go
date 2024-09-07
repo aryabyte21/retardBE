@@ -30,7 +30,7 @@ type User struct {
 func main() {
 	var err error
 
-	dsn := "user=postgres password=yourpassword dbname=portfoliodb sslmode=disable"
+	dsn := "user=admin password=admin@123 dbname=retardDB sslmode=disable"
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal(err)
